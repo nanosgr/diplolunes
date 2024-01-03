@@ -1,0 +1,65 @@
+body {
+    background: #cbcbcb;
+    background: linear-gradient(125deg,#cbcbcb 25%, #bfc2cd 80%);
+    background: -webkit-linear-gradient(125deg,#cbcbcb 25%, #bfc2cd 80%);
+    background: -moz-linear-gradient(125deg,#cbcbcb 25%, #bfc2cd 80%);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: normal;
+    color: #333;
+    margin-top: 5vh;
+    padding: 0;
+}
+
+#MiFoto {
+    border: 0;
+    margin: 50px;
+    padding: 0;
+    width: 10%;
+    height: auto;
+    border-radius: 10px;
+    margin: 70px;
+    box-shadow: 12px 10px 16px -1px rgba(153, 153, 153, 0.78);
+    -webkit-box-shadow: 12px 10px 16px -1px rgba(153, 153, 153, 0.78);
+    -moz-box-shadow: 12px 10px 16px -1px rgba(153, 153, 153, 0.78);
+    float: left;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+h2 h3 {
+    font-weight: normal;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.mi_parrafo {
+    font-size: 1 rem;
+    margin: 10px;
+}
+
+.contacto {
+    font-size: 1 rem;
+    height: 30px;
+    width: 50vh;
+    margin: 10px;
+    padding: 25px;
+    background-color: antiquewhite;
+    border-radius: 30px;
+    box-shadow: 12px 10px 16px -1px rgba(153, 153, 153, 0.78);
+    -webkit-box-shadow: 12px 10px 16px -1px rgba(153, 153, 153, 0.78);
+    -moz-box-shadow: 12px 10px 16px -1px rgba(153, 153, 153, 0.78);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
