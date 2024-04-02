@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="#" type="image/x-icon">
+        <title>Módulo 3 - Unidad 3 (Ejercicio 2)</title>
+    </head>
+    <body>
+        <!-- Crear el código que reciba como parámetro un array de números y devuelva el mayor. -->
+        <script>
+            function mayorNumero(array) {
+                let mayor = array[0];
+                for (let i = 1; i < array.length; i++) {
+                    if (array[i] > mayor) {
+                        mayor = array[i];
+                    }
+                }
+                return mayor;
+            }
+
+            let array = [100, 2, 3, 4, 50, 6, 7, 85, 99, 101];
+            console.log(mayorNumero(array));
+        </script>
+    </body>
+</html>
