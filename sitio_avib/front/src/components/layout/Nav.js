@@ -1,5 +1,5 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import '../../styles/components/layout/Nav.css';
+import { NavLink } from "react-router-dom";
 
 const Nav = (props) => {
     return (
@@ -7,16 +7,16 @@ const Nav = (props) => {
             <div>
                 <ul>
                     <li>
-                        <Link to="/">Home</Link>
+                        <NavLink to="/" className={({isActive}) => isActive ? 'activo' : undefined }>Home</NavLink>
                     </li>
                     <li>
-                        <Link to="/nosotros">Nosotros</Link>
+                        <NavLink to="/nosotros" className={({isActive}) => isActive ? 'activo' : undefined }>Nosotros</NavLink>
                     </li>
                     <li>
-                        <Link to="/novedades">Novedades</Link>
+                        <NavLink to="/novedades" className={({isActive}) => isActive ? 'activo' : undefined }>Novedades</NavLink>
                     </li>
                     <li>
-                        <Link to="/contacto">Contacto</Link>
+                        <NavLink to="/contacto" className={({isActive}) => isActive ? 'activo' : undefined }>Contacto</NavLink>
                     </li>
                 </ul>
             </div>
