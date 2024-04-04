@@ -1,0 +1,27 @@
+{{!-- Armamos el dashboard de la aplicación --}}
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <h1 class="text-center">Dashboard</h1>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12">
+      <h2 class="text-center">Bienvenido {{usuario.nombre}} {{usuario.apellido}}</h2>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12">
+      <h3 class="text-center">Estos son tus productos</h3>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12">
+      <ul>
+        {{#each productos}}
+          <li>{{this.nombre}} - {{this.precio}}</li>
+        {{/each}}
+      </ul>
+    </div>
+  </div>
+</div>

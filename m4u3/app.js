@@ -6,6 +6,9 @@ var logger = require('morgan');
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
+var useDashboard = require('./routes/dashboard');
+var useProductos = require('./routes/productos');
+var usePromociones = require('./routes/promociones');
 
 var app = express();
 
@@ -21,6 +24,9 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
+app.use('/dashboard', useDashboard);
+app.use('/productos', useProductos);
+app.use('/promociones', usePromociones);
 
 app.get('/prueba', (req, res) => {
   res.send('Hola mundo');
