@@ -14,7 +14,6 @@ router.get('/nuevo', function (req, res) {
 
 router.post('/nuevo', function (req, res) {
   try {
-    console.log(req.body);
     if (req.body.NombreProducto != "" && req.body.Medidas != "" && req.body.Descripcion != "") {
       var obj = {
         NombreProducto: req.body.NombreProducto,
@@ -54,7 +53,7 @@ router.post('/editar/', function (req, res) {
         Descripcion: req.body.Descripcion,
         OtrasEspecificaciones: req.body.OtrasEspecificaciones,
       }
-      console.log(obj)
+
       productosModel.updateProduct(obj, +req.body.id);
       res.redirect('/productos');
     }else{
